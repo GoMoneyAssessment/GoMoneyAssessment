@@ -12,18 +12,22 @@ class HomeViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setup()
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setup() {
+        let todayFixturesVC = TodayFixturesViewController()
+        let allCompsVC = AllCompetitionsViewController()
+        
+        let todayFixturesNav = UINavigationController(rootViewController: todayFixturesVC)
+        let allCompsNav = UINavigationController(rootViewController: allCompsVC)
+        
+        todayFixturesVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ball"), tag: 1)
+        allCompsVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "pitch"), tag: 2)
+        
+        todayFixturesVC.tabBarItem.accessibilityIdentifier = "TodayFixturesTab"
+        allCompsVC.tabBarItem.accessibilityIdentifier = "AllCompetitionsTab"
+        
+        viewControllers = [todayFixturesNav, allCompsNav]
     }
-    */
-
 }

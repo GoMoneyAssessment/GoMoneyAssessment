@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct TeamsResponse: Codable {
+    let count: Int?
+    let filters: Filters?
+    let competition: Competition?
+    let season: Season?
+    let teams: [Team]?
+}

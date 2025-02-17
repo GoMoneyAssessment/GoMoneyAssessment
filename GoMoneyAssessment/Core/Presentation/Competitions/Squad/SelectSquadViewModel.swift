@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+@MainActor
+class SelectSquadViewModel: BaseViewModel {
+    let service: CompetitionsService = CompetitionsServiceImpl()
+    var onSquadFetched: (() -> ())?
+    
+}

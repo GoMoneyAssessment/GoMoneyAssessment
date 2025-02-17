@@ -6,30 +6,48 @@
 //
 
 import XCTest
+@testable import GoMoneyAssessment
 
 final class CompetitionsServiceTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    var service: CompetitionsService!
+    var networkManager: NetworkManager!
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func setUp() {
+        super.setUp()
+        networkManager = NetworkManagerMock(requestHandler: RequestHandlerMock(), responsehandler: ResponseHandlerMock())
+        service = CompetitionsServiceImpl(networkManager: networkManager)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    override func tearDown() {
+        service = nil
+        networkManager = nil
+        super.tearDown()
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testFetchCompetitions_Success() async {
+        let manager = networkManager as! NetworkManagerMock
+        manager.mockResponse = CompetitionsResponse(count: 1, filters: nil, competitions: [])
+        
+        do {
+            let response = try await service.fetchCompetitions()
+            XCTAssertEqual(response.competitions?.count, 0)
+        } catch {
+            XCTFail()
         }
     }
-
+    
+    func testFetchCompetitions_Failure() async {
+        let manager = networkManager as! NetworkManagerMock
+        manager.shouldThrowError = true
+        
+        do {
+            let _ = try await service.fetchCompetitions()
+            XCTFail("it should have enter catch block")
+        } catch let error as AppError {
+            XCTAssertEqual(error.message, "bad request")
+        } catch {
+            XCTFail()
+        }
+    }
 }

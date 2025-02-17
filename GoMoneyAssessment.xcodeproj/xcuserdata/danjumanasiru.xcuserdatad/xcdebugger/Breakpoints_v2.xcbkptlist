@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4169033E-B62F-4559-849F-1AC7C9732239"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D96A8268-DE83-49C6-B3AC-59CD336855A7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoMoneyAssessment/Core/Presentation/All Competitions/AllCompetitionsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchCompetitions()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D96A8268-DE83-49C6-B3AC-59CD336855A7 - a400a49e6c2cbaba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in GoMoneyAssessment.AllCompetitionsViewModel.fetchCompetitions() -&gt; ()"
+                  moduleName = "GoMoneyAssessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danjumanasiru/Projects/GoMoneyAssessment/GoMoneyAssessment/Core/Presentation/All%20Competitions/AllCompetitionsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "D96A8268-DE83-49C6-B3AC-59CD336855A7 - aca5779739b95da6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async throws -&gt; () in GoMoneyAssessment.AllCompetitionsViewModel.fetchCompetitions() -&gt; ()"
+                  moduleName = "GoMoneyAssessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danjumanasiru/Projects/GoMoneyAssessment/GoMoneyAssessment/Core/Presentation/All%20Competitions/AllCompetitionsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "D96A8268-DE83-49C6-B3AC-59CD336855A7 - d2be1f8b0eca7ea4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in GoMoneyAssessment.AllCompetitionsViewModel.fetchCompetitions() -&gt; ()"
+                  moduleName = "GoMoneyAssessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danjumanasiru/Projects/GoMoneyAssessment/GoMoneyAssessment/Core/Presentation/All%20Competitions/AllCompetitionsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "D96A8268-DE83-49C6-B3AC-59CD336855A7 - b596c37d79d6a0a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in GoMoneyAssessment.AllCompetitionsViewModel.fetchCompetitions() -&gt; ()"
+                  moduleName = "GoMoneyAssessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danjumanasiru/Projects/GoMoneyAssessment/GoMoneyAssessment/Core/Presentation/All%20Competitions/AllCompetitionsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50075D3C-F8D7-4222-86DD-335BAF60CE26"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoMoneyAssessment/Core/Presentation/Competitions/Standings/SelectCompetitionStandingsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "fetchStandings()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "50075D3C-F8D7-4222-86DD-335BAF60CE26 - a447482159e2a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in GoMoneyAssessment.SelectCompetitionStandingsViewModel.fetchStandings() -&gt; ()"
+                  moduleName = "GoMoneyAssessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danjumanasiru/Projects/GoMoneyAssessment/GoMoneyAssessment/Core/Presentation/Competitions/Standings/SelectCompetitionStandingsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "50075D3C-F8D7-4222-86DD-335BAF60CE26 - 87fde1231b128f5f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async throws -&gt; () in GoMoneyAssessment.SelectCompetitionStandingsViewModel.fetchStandings() -&gt; ()"
+                  moduleName = "GoMoneyAssessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danjumanasiru/Projects/GoMoneyAssessment/GoMoneyAssessment/Core/Presentation/Competitions/Standings/SelectCompetitionStandingsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "50075D3C-F8D7-4222-86DD-335BAF60CE26 - 76377b99e49f0ea8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in GoMoneyAssessment.SelectCompetitionStandingsViewModel.fetchStandings() -&gt; ()"
+                  moduleName = "GoMoneyAssessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danjumanasiru/Projects/GoMoneyAssessment/GoMoneyAssessment/Core/Presentation/Competitions/Standings/SelectCompetitionStandingsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "50075D3C-F8D7-4222-86DD-335BAF60CE26 - d2c1e041057c64b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in GoMoneyAssessment.SelectCompetitionStandingsViewModel.fetchStandings() -&gt; ()"
+                  moduleName = "GoMoneyAssessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danjumanasiru/Projects/GoMoneyAssessment/GoMoneyAssessment/Core/Presentation/Competitions/Standings/SelectCompetitionStandingsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

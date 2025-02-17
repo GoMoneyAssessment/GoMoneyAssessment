@@ -9,33 +9,41 @@ import XCTest
 
 final class TodaysFixturesViewControllerUITests: XCTestCase {
 
+    var app: XCUIApplication!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+        app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
+    
+    func testTableViewExists() throws {
+            let tableView = app.tables.firstMatch
+            XCTAssertTrue(tableView.exists, "TableView should be present on the screen")
         }
+    
+    func testLoaderIsVisibleWhileFetching() throws {
+        let loader = app.activityIndicators["activityIndicator"]
+        
+        XCTAssertTrue(loader.exists, "Loader should be visible while fetching matches")
     }
+    
+    func testMatchesAreDisplayed() throws {
+        let tableView = app.tables.firstMatch
+        XCTAssertTrue(tableView.exists, "TableView should exist")
+
+        let firstCell = tableView.cells.element(boundBy: 0)
+        let exists = firstCell.waitForExistence(timeout: 5)
+        XCTAssertTrue(exists, "First match cell should be displayed after data is loaded")
+    }
+    
+//MARK: this test will pass if the API throws an error or if user reaches fetch limit before 30 seconds and API fails. An Error can be simulated by putting a wrong token in the network manager
+//    func testErrorAlertIsDisplayed() throws {
+//        let errorAlert = app.alerts.element(boundBy: 0)
+//        XCTAssertTrue(errorAlert.waitForExistence(timeout: 30), "Error alert should appear when data fetching fails")
+//
+//        let retryButton = errorAlert.buttons["Retry"]
+//        XCTAssertTrue(retryButton.exists, "Retry button should exist in the alert")
+//        retryButton.tap()
+//    }
 }

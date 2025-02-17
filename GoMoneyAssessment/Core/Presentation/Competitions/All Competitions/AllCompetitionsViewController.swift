@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AllCompetitionsViewController: UIViewController {
+class AllCompetitionsViewController: BaseViewController {
     
     let viewModel: AllCompetitionsViewModel = AllCompetitionsViewModel()
     var competitions: [Competition] = []
@@ -23,26 +23,37 @@ class AllCompetitionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
         navigationItem.title = "Competitions"
-        
+        view.backgroundColor = .systemBackground
         view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CompetitionsCell")
         
         setupConstraints()
+        showLoader()
         
         viewModel.onFetchCompetitions = { [weak self] comps in
-            self?.competitions = comps
-            self?.tableView.reloadData()
+            guard let self else { return }
+            competitions = comps
+            tableView.reloadData()
+            hideLoader()
         }
-        viewModel.fetchCompetitions()
+        viewModel.onErrorOccured = { [weak self] error in
+            self?.hideLoader()
+            self?.showErrorAlert(message: error.message) {
+                self?.showLoader()
+                self?.viewModel.fetchCompetitions()
+            }
+        }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.fetchCompetitions()
+    }
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
@@ -68,6 +79,7 @@ extension AllCompetitionsViewController: UITableViewDataSource, UITableViewDeleg
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let competition = competitions[indexPath.row]
         let compName = competition.name
         let startYear = competition.currentSeason?.startDate?.getdateFromShortDateString().getYearCompFromDate()

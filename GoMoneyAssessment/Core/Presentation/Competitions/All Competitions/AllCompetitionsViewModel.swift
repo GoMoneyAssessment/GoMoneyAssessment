@@ -8,9 +8,10 @@
 import Foundation
 
 @MainActor
-class AllCompetitionsViewModel {
+class AllCompetitionsViewModel: BaseViewModel {
     let competitionsService: CompetitionsService
     var onFetchCompetitions: (([Competition]) -> ())?
+    
     init(competitionsService: CompetitionsService = CompetitionsServiceImpl()) {
         self.competitionsService = competitionsService
     }
@@ -22,8 +23,8 @@ class AllCompetitionsViewModel {
                 onFetchCompetitions?(response.competitions ?? [])
             } catch let error as AppError {
                 print("error message is: \(error.message ?? "")")
+                onErrorOccured?(error)
             }
         }
     }
-
 }

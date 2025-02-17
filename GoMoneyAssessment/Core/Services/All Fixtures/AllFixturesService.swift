@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol AllFixturesService {
+    func fetchAllMatches() async throws -> AllMatchesResponse
+}

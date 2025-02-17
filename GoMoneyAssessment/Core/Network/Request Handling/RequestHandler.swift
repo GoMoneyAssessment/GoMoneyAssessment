@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol RequestHandler {
+    func makeRequest(request: URLRequest) async throws -> (Int, Data)
+}

@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct AppError: Codable, Error {
+    let code: Int?
+    let message: String?
+}

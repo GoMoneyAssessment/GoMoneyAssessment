@@ -7,40 +7,228 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2935D0562D626F2B0050430F /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D0552D626F2B0050430F /* NetworkManagerTests.swift */; };
+		2935D0592D62779A0050430F /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D0582D62779A0050430F /* RequestHandler.swift */; };
+		2935D05B2D6277C20050430F /* RequestHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D05A2D6277C20050430F /* RequestHandlerImpl.swift */; };
+		2935D05E2D6278270050430F /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D05D2D6278270050430F /* ResponseHandler.swift */; };
+		2935D0602D6278360050430F /* ResponseHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D05F2D6278360050430F /* ResponseHandlerImpl.swift */; };
+		2935D0622D62786E0050430F /* ResponseHandlerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D0612D62786E0050430F /* ResponseHandlerMock.swift */; };
+		2935D0642D6278BB0050430F /* RequestHandlerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D0632D6278BB0050430F /* RequestHandlerMock.swift */; };
+		2935D0672D6287D90050430F /* NetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D0662D6287D90050430F /* NetworkManagerImpl.swift */; };
+		2935D0692D62895A0050430F /* NetworkManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D0682D62895A0050430F /* NetworkManagerMock.swift */; };
+		2935D06B2D628BBD0050430F /* CompetitionsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D06A2D628BBD0050430F /* CompetitionsServiceTests.swift */; };
+		2935D06D2D6290420050430F /* CompetitionsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D06C2D6290420050430F /* CompetitionsServiceMock.swift */; };
+		2935D06F2D6291E50050430F /* AllCompetitionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D06E2D6291E50050430F /* AllCompetitionsViewModelTests.swift */; };
+		2935D0802D62B0A20050430F /* DashboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D07F2D62B0A20050430F /* DashboardUITests.swift */; };
+		2935D0822D630EE40050430F /* TodaysFixturesViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D0812D630EE40050430F /* TodaysFixturesViewControllerUITests.swift */; };
+		2935D0842D63175D0050430F /* AllCompetitionsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935D0832D63175D0050430F /* AllCompetitionsViewControllerUITests.swift */; };
 		293A33FF2D5CEF6C001AE6FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A33FE2D5CEF6C001AE6FC /* AppDelegate.swift */; };
 		293A34012D5CEF6C001AE6FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34002D5CEF6C001AE6FC /* SceneDelegate.swift */; };
-		293A34032D5CEF6C001AE6FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34022D5CEF6C001AE6FC /* ViewController.swift */; };
-		293A34062D5CEF6C001AE6FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293A34042D5CEF6C001AE6FC /* Main.storyboard */; };
 		293A34082D5CEF6E001AE6FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293A34072D5CEF6E001AE6FC /* Assets.xcassets */; };
-		293A340B2D5CEF6E001AE6FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293A34092D5CEF6E001AE6FC /* LaunchScreen.storyboard */; };
+		293A341A2D5CFA9B001AE6FC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34192D5CFA9B001AE6FC /* HomeViewController.swift */; };
+		293A341D2D5CFB63001AE6FC /* TodayFixturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A341C2D5CFB63001AE6FC /* TodayFixturesViewController.swift */; };
+		293A341F2D5CFB7F001AE6FC /* AllCompetitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A341E2D5CFB7F001AE6FC /* AllCompetitionsViewController.swift */; };
+		293A34222D5D022D001AE6FC /* TodayFixturesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34212D5D022D001AE6FC /* TodayFixturesViewModel.swift */; };
+		293A34242D5D028F001AE6FC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34232D5D028F001AE6FC /* NetworkManager.swift */; };
+		293A34262D5D029C001AE6FC /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34252D5D029C001AE6FC /* URLs.swift */; };
+		293A34282D5D045B001AE6FC /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34272D5D045B001AE6FC /* AppError.swift */; };
+		293A342B2D5D0C21001AE6FC /* AllFixturesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A342A2D5D0C21001AE6FC /* AllFixturesService.swift */; };
+		293A342D2D5D0C74001AE6FC /* AllFixturesServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A342C2D5D0C74001AE6FC /* AllFixturesServiceImpl.swift */; };
+		293A342F2D5D0DD5001AE6FC /* AllMatchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A342E2D5D0DD5001AE6FC /* AllMatchesResponse.swift */; };
+		293A34322D5D13DF001AE6FC /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34312D5D13DF001AE6FC /* MatchTableViewCell.swift */; };
+		293A34352D5D2448001AE6FC /* DateExt+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34342D5D2448001AE6FC /* DateExt+.swift */; };
+		293A343A2D5D333D001AE6FC /* CompetitionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34392D5D333C001AE6FC /* CompetitionsResponse.swift */; };
+		293A343C2D5D3497001AE6FC /* AllCompetitionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A343B2D5D3497001AE6FC /* AllCompetitionsViewModel.swift */; };
+		293A343F2D5D34D1001AE6FC /* CompetitionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A343E2D5D34D1001AE6FC /* CompetitionsService.swift */; };
+		293A34412D5D34EE001AE6FC /* CompetitionsServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34402D5D34EE001AE6FC /* CompetitionsServiceImpl.swift */; };
+		293A34432D5D3808001AE6FC /* StringExt+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34422D5D3808001AE6FC /* StringExt+.swift */; };
+		293A34452D5D541F001AE6FC /* SelectCompetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34442D5D541F001AE6FC /* SelectCompetitionViewController.swift */; };
+		293A34472D5DCF74001AE6FC /* SelectCompetitionStandingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34462D5DCF74001AE6FC /* SelectCompetitionStandingsViewController.swift */; };
+		293A34492D5DCF99001AE6FC /* SelectCompetitionFixturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34482D5DCF99001AE6FC /* SelectCompetitionFixturesViewController.swift */; };
+		293A344B2D5DCFCE001AE6FC /* SelectCompetitionTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A344A2D5DCFCE001AE6FC /* SelectCompetitionTeamsViewController.swift */; };
+		293A344E2D5DE11E001AE6FC /* SelectCompetitionStandingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A344D2D5DE11E001AE6FC /* SelectCompetitionStandingsViewModel.swift */; };
+		293A34502D5DE25B001AE6FC /* StandingsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A344F2D5DE25B001AE6FC /* StandingsResponse.swift */; };
+		293A34532D5DEA78001AE6FC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 293A34522D5DEA78001AE6FC /* SDWebImage */; };
+		293A34552D5DEA78001AE6FC /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 293A34542D5DEA78001AE6FC /* SDWebImageMapKit */; };
+		293A34572D5DEAA0001AE6FC /* StandingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34562D5DEAA0001AE6FC /* StandingsTableViewCell.swift */; };
+		293A345D2D5E092C001AE6FC /* SelectCompetitionFixturesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A345C2D5E092C001AE6FC /* SelectCompetitionFixturesViewModel.swift */; };
+		293A34612D5E1FBD001AE6FC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34602D5E1FBD001AE6FC /* BaseViewController.swift */; };
+		293A34642D5E6F48001AE6FC /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34632D5E6F48001AE6FC /* TeamCell.swift */; };
+		293A34662D5E73B2001AE6FC /* TeamsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34652D5E73B2001AE6FC /* TeamsResponse.swift */; };
+		293A34682D5E7A62001AE6FC /* SelectCompetitionTeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34672D5E7A62001AE6FC /* SelectCompetitionTeamsViewModel.swift */; };
+		293A346A2D5E8EC7001AE6FC /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34692D5E8EC7001AE6FC /* BaseViewModel.swift */; };
+		293A346D2D5F408F001AE6FC /* SelectSquadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A346C2D5F408F001AE6FC /* SelectSquadViewController.swift */; };
+		293A346F2D5F40AA001AE6FC /* SelectSquadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A346E2D5F40AA001AE6FC /* SelectSquadViewModel.swift */; };
+		293A34712D5F5B14001AE6FC /* SquadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A34702D5F5B14001AE6FC /* SquadTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2935D0502D626B660050430F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 293A33F32D5CEF6C001AE6FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 293A33FA2D5CEF6C001AE6FC;
+			remoteInfo = GoMoneyAssessment;
+		};
+		2935D07A2D62B0690050430F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 293A33F32D5CEF6C001AE6FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 293A33FA2D5CEF6C001AE6FC;
+			remoteInfo = GoMoneyAssessment;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2935D04C2D626B660050430F /* GoMoneyAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoMoneyAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2935D0552D626F2B0050430F /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		2935D0582D62779A0050430F /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		2935D05A2D6277C20050430F /* RequestHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandlerImpl.swift; sourceTree = "<group>"; };
+		2935D05D2D6278270050430F /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
+		2935D05F2D6278360050430F /* ResponseHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandlerImpl.swift; sourceTree = "<group>"; };
+		2935D0612D62786E0050430F /* ResponseHandlerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandlerMock.swift; sourceTree = "<group>"; };
+		2935D0632D6278BB0050430F /* RequestHandlerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandlerMock.swift; sourceTree = "<group>"; };
+		2935D0662D6287D90050430F /* NetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerImpl.swift; sourceTree = "<group>"; };
+		2935D0682D62895A0050430F /* NetworkManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerMock.swift; sourceTree = "<group>"; };
+		2935D06A2D628BBD0050430F /* CompetitionsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsServiceTests.swift; sourceTree = "<group>"; };
+		2935D06C2D6290420050430F /* CompetitionsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsServiceMock.swift; sourceTree = "<group>"; };
+		2935D06E2D6291E50050430F /* AllCompetitionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCompetitionsViewModelTests.swift; sourceTree = "<group>"; };
+		2935D0742D62B0690050430F /* GoMoneyAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoMoneyAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2935D07F2D62B0A20050430F /* DashboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUITests.swift; sourceTree = "<group>"; };
+		2935D0812D630EE40050430F /* TodaysFixturesViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysFixturesViewControllerUITests.swift; sourceTree = "<group>"; };
+		2935D0832D63175D0050430F /* AllCompetitionsViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCompetitionsViewControllerUITests.swift; sourceTree = "<group>"; };
 		293A33FB2D5CEF6C001AE6FC /* GoMoneyAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoMoneyAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		293A33FE2D5CEF6C001AE6FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		293A34002D5CEF6C001AE6FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		293A34022D5CEF6C001AE6FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		293A34052D5CEF6C001AE6FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		293A34072D5CEF6E001AE6FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		293A340A2D5CEF6E001AE6FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		293A340C2D5CEF6E001AE6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		293A34192D5CFA9B001AE6FC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		293A341C2D5CFB63001AE6FC /* TodayFixturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayFixturesViewController.swift; sourceTree = "<group>"; };
+		293A341E2D5CFB7F001AE6FC /* AllCompetitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCompetitionsViewController.swift; sourceTree = "<group>"; };
+		293A34212D5D022D001AE6FC /* TodayFixturesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayFixturesViewModel.swift; sourceTree = "<group>"; };
+		293A34232D5D028F001AE6FC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		293A34252D5D029C001AE6FC /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		293A34272D5D045B001AE6FC /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		293A342A2D5D0C21001AE6FC /* AllFixturesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFixturesService.swift; sourceTree = "<group>"; };
+		293A342C2D5D0C74001AE6FC /* AllFixturesServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFixturesServiceImpl.swift; sourceTree = "<group>"; };
+		293A342E2D5D0DD5001AE6FC /* AllMatchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMatchesResponse.swift; sourceTree = "<group>"; };
+		293A34312D5D13DF001AE6FC /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
+		293A34342D5D2448001AE6FC /* DateExt+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateExt+.swift"; sourceTree = "<group>"; };
+		293A34392D5D333C001AE6FC /* CompetitionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsResponse.swift; sourceTree = "<group>"; };
+		293A343B2D5D3497001AE6FC /* AllCompetitionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCompetitionsViewModel.swift; sourceTree = "<group>"; };
+		293A343E2D5D34D1001AE6FC /* CompetitionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsService.swift; sourceTree = "<group>"; };
+		293A34402D5D34EE001AE6FC /* CompetitionsServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsServiceImpl.swift; sourceTree = "<group>"; };
+		293A34422D5D3808001AE6FC /* StringExt+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExt+.swift"; sourceTree = "<group>"; };
+		293A34442D5D541F001AE6FC /* SelectCompetitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCompetitionViewController.swift; sourceTree = "<group>"; };
+		293A34462D5DCF74001AE6FC /* SelectCompetitionStandingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCompetitionStandingsViewController.swift; sourceTree = "<group>"; };
+		293A34482D5DCF99001AE6FC /* SelectCompetitionFixturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCompetitionFixturesViewController.swift; sourceTree = "<group>"; };
+		293A344A2D5DCFCE001AE6FC /* SelectCompetitionTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCompetitionTeamsViewController.swift; sourceTree = "<group>"; };
+		293A344D2D5DE11E001AE6FC /* SelectCompetitionStandingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCompetitionStandingsViewModel.swift; sourceTree = "<group>"; };
+		293A344F2D5DE25B001AE6FC /* StandingsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsResponse.swift; sourceTree = "<group>"; };
+		293A34562D5DEAA0001AE6FC /* StandingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableViewCell.swift; sourceTree = "<group>"; };
+		293A345C2D5E092C001AE6FC /* SelectCompetitionFixturesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCompetitionFixturesViewModel.swift; sourceTree = "<group>"; };
+		293A34602D5E1FBD001AE6FC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		293A34632D5E6F48001AE6FC /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
+		293A34652D5E73B2001AE6FC /* TeamsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsResponse.swift; sourceTree = "<group>"; };
+		293A34672D5E7A62001AE6FC /* SelectCompetitionTeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCompetitionTeamsViewModel.swift; sourceTree = "<group>"; };
+		293A34692D5E8EC7001AE6FC /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		293A346C2D5F408F001AE6FC /* SelectSquadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSquadViewController.swift; sourceTree = "<group>"; };
+		293A346E2D5F40AA001AE6FC /* SelectSquadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSquadViewModel.swift; sourceTree = "<group>"; };
+		293A34702D5F5B14001AE6FC /* SquadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		293A33F82D5CEF6C001AE6FC /* Frameworks */ = {
+		2935D0492D626B660050430F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2935D0712D62B0690050430F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		293A33F82D5CEF6C001AE6FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293A34552D5DEA78001AE6FC /* SDWebImageMapKit in Frameworks */,
+				293A34532D5DEA78001AE6FC /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2935D04D2D626B660050430F /* GoMoneyAssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				2935D0552D626F2B0050430F /* NetworkManagerTests.swift */,
+				2935D06A2D628BBD0050430F /* CompetitionsServiceTests.swift */,
+				2935D06E2D6291E50050430F /* AllCompetitionsViewModelTests.swift */,
+			);
+			path = GoMoneyAssessmentTests;
+			sourceTree = "<group>";
+		};
+		2935D0572D6277820050430F /* Request Handling */ = {
+			isa = PBXGroup;
+			children = (
+				2935D0582D62779A0050430F /* RequestHandler.swift */,
+				2935D05A2D6277C20050430F /* RequestHandlerImpl.swift */,
+				2935D0632D6278BB0050430F /* RequestHandlerMock.swift */,
+			);
+			path = "Request Handling";
+			sourceTree = "<group>";
+		};
+		2935D05C2D6278130050430F /* Response Handling */ = {
+			isa = PBXGroup;
+			children = (
+				2935D05D2D6278270050430F /* ResponseHandler.swift */,
+				2935D05F2D6278360050430F /* ResponseHandlerImpl.swift */,
+				2935D0612D62786E0050430F /* ResponseHandlerMock.swift */,
+			);
+			path = "Response Handling";
+			sourceTree = "<group>";
+		};
+		2935D0652D6287C10050430F /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				293A34232D5D028F001AE6FC /* NetworkManager.swift */,
+				2935D0662D6287D90050430F /* NetworkManagerImpl.swift */,
+				2935D0682D62895A0050430F /* NetworkManagerMock.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		2935D0752D62B0690050430F /* GoMoneyAssessmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2935D07F2D62B0A20050430F /* DashboardUITests.swift */,
+				2935D0812D630EE40050430F /* TodaysFixturesViewControllerUITests.swift */,
+				2935D0832D63175D0050430F /* AllCompetitionsViewControllerUITests.swift */,
+			);
+			path = GoMoneyAssessmentUITests;
+			sourceTree = "<group>";
+		};
+		2935D0852D6325140050430F /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				293A34692D5E8EC7001AE6FC /* BaseViewModel.swift */,
+				293A34602D5E1FBD001AE6FC /* BaseViewController.swift */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
 		293A33F22D5CEF6C001AE6FC = {
 			isa = PBXGroup;
 			children = (
 				293A33FD2D5CEF6C001AE6FC /* GoMoneyAssessment */,
+				2935D04D2D626B660050430F /* GoMoneyAssessmentTests */,
+				2935D0752D62B0690050430F /* GoMoneyAssessmentUITests */,
 				293A33FC2D5CEF6C001AE6FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				293A33FB2D5CEF6C001AE6FC /* GoMoneyAssessment.app */,
+				2935D04C2D626B660050430F /* GoMoneyAssessmentTests.xctest */,
+				2935D0742D62B0690050430F /* GoMoneyAssessmentUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,20 +246,248 @@
 		293A33FD2D5CEF6C001AE6FC /* GoMoneyAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				293A34122D5CF24C001AE6FC /* Core */,
 				293A33FE2D5CEF6C001AE6FC /* AppDelegate.swift */,
 				293A34002D5CEF6C001AE6FC /* SceneDelegate.swift */,
-				293A34022D5CEF6C001AE6FC /* ViewController.swift */,
-				293A34042D5CEF6C001AE6FC /* Main.storyboard */,
 				293A34072D5CEF6E001AE6FC /* Assets.xcassets */,
-				293A34092D5CEF6E001AE6FC /* LaunchScreen.storyboard */,
 				293A340C2D5CEF6E001AE6FC /* Info.plist */,
 			);
 			path = GoMoneyAssessment;
 			sourceTree = "<group>";
 		};
+		293A34122D5CF24C001AE6FC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				293A34162D5CFA38001AE6FC /* Presentation */,
+				293A34332D5D2429001AE6FC /* Helpers */,
+				293A34132D5CF259001AE6FC /* Models */,
+				293A34142D5CF269001AE6FC /* Services */,
+				293A34152D5CF9EA001AE6FC /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		293A34132D5CF259001AE6FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				293A342E2D5D0DD5001AE6FC /* AllMatchesResponse.swift */,
+				293A34392D5D333C001AE6FC /* CompetitionsResponse.swift */,
+				293A344F2D5DE25B001AE6FC /* StandingsResponse.swift */,
+				293A34652D5E73B2001AE6FC /* TeamsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		293A34142D5CF269001AE6FC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				293A343D2D5D34BA001AE6FC /* Competitions */,
+				293A34292D5D0C10001AE6FC /* All Fixtures */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		293A34152D5CF9EA001AE6FC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2935D0652D6287C10050430F /* Network Manager */,
+				2935D05C2D6278130050430F /* Response Handling */,
+				2935D0572D6277820050430F /* Request Handling */,
+				293A34252D5D029C001AE6FC /* URLs.swift */,
+				293A34272D5D045B001AE6FC /* AppError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		293A34162D5CFA38001AE6FC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				293A34182D5CFA61001AE6FC /* Dashboard */,
+				293A34172D5CFA44001AE6FC /* All Fixtures */,
+				293A341B2D5CFB3C001AE6FC /* Competitions */,
+				293A34302D5D13C3001AE6FC /* TableViewCells */,
+				293A34622D5E6F2B001AE6FC /* CollectionViewCells */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		293A34172D5CFA44001AE6FC /* All Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				293A341C2D5CFB63001AE6FC /* TodayFixturesViewController.swift */,
+				293A34212D5D022D001AE6FC /* TodayFixturesViewModel.swift */,
+			);
+			path = "All Fixtures";
+			sourceTree = "<group>";
+		};
+		293A34182D5CFA61001AE6FC /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				293A34192D5CFA9B001AE6FC /* HomeViewController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		293A341B2D5CFB3C001AE6FC /* Competitions */ = {
+			isa = PBXGroup;
+			children = (
+				293A34582D5DFF87001AE6FC /* All Competitions */,
+				293A34592D5DFF9C001AE6FC /* SelectCompetition */,
+				293A344C2D5DE110001AE6FC /* Standings */,
+				293A345A2D5DFFC9001AE6FC /* Select Competition Fixtures */,
+				293A345B2D5DFFEA001AE6FC /* Select Competition Teams */,
+				293A346B2D5F4053001AE6FC /* Squad */,
+			);
+			path = Competitions;
+			sourceTree = "<group>";
+		};
+		293A34292D5D0C10001AE6FC /* All Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				293A342A2D5D0C21001AE6FC /* AllFixturesService.swift */,
+				293A342C2D5D0C74001AE6FC /* AllFixturesServiceImpl.swift */,
+			);
+			path = "All Fixtures";
+			sourceTree = "<group>";
+		};
+		293A34302D5D13C3001AE6FC /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				293A34312D5D13DF001AE6FC /* MatchTableViewCell.swift */,
+				293A34562D5DEAA0001AE6FC /* StandingsTableViewCell.swift */,
+				293A34702D5F5B14001AE6FC /* SquadTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		293A34332D5D2429001AE6FC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				293A34362D5D25B2001AE6FC /* Extensions */,
+				2935D0852D6325140050430F /* Bases */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		293A34362D5D25B2001AE6FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				293A34342D5D2448001AE6FC /* DateExt+.swift */,
+				293A34422D5D3808001AE6FC /* StringExt+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		293A343D2D5D34BA001AE6FC /* Competitions */ = {
+			isa = PBXGroup;
+			children = (
+				293A343E2D5D34D1001AE6FC /* CompetitionsService.swift */,
+				293A34402D5D34EE001AE6FC /* CompetitionsServiceImpl.swift */,
+				2935D06C2D6290420050430F /* CompetitionsServiceMock.swift */,
+			);
+			path = Competitions;
+			sourceTree = "<group>";
+		};
+		293A344C2D5DE110001AE6FC /* Standings */ = {
+			isa = PBXGroup;
+			children = (
+				293A34462D5DCF74001AE6FC /* SelectCompetitionStandingsViewController.swift */,
+				293A344D2D5DE11E001AE6FC /* SelectCompetitionStandingsViewModel.swift */,
+			);
+			path = Standings;
+			sourceTree = "<group>";
+		};
+		293A34582D5DFF87001AE6FC /* All Competitions */ = {
+			isa = PBXGroup;
+			children = (
+				293A341E2D5CFB7F001AE6FC /* AllCompetitionsViewController.swift */,
+				293A343B2D5D3497001AE6FC /* AllCompetitionsViewModel.swift */,
+			);
+			path = "All Competitions";
+			sourceTree = "<group>";
+		};
+		293A34592D5DFF9C001AE6FC /* SelectCompetition */ = {
+			isa = PBXGroup;
+			children = (
+				293A34442D5D541F001AE6FC /* SelectCompetitionViewController.swift */,
+			);
+			path = SelectCompetition;
+			sourceTree = "<group>";
+		};
+		293A345A2D5DFFC9001AE6FC /* Select Competition Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				293A34482D5DCF99001AE6FC /* SelectCompetitionFixturesViewController.swift */,
+				293A345C2D5E092C001AE6FC /* SelectCompetitionFixturesViewModel.swift */,
+			);
+			path = "Select Competition Fixtures";
+			sourceTree = "<group>";
+		};
+		293A345B2D5DFFEA001AE6FC /* Select Competition Teams */ = {
+			isa = PBXGroup;
+			children = (
+				293A344A2D5DCFCE001AE6FC /* SelectCompetitionTeamsViewController.swift */,
+				293A34672D5E7A62001AE6FC /* SelectCompetitionTeamsViewModel.swift */,
+			);
+			path = "Select Competition Teams";
+			sourceTree = "<group>";
+		};
+		293A34622D5E6F2B001AE6FC /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				293A34632D5E6F48001AE6FC /* TeamCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		293A346B2D5F4053001AE6FC /* Squad */ = {
+			isa = PBXGroup;
+			children = (
+				293A346C2D5F408F001AE6FC /* SelectSquadViewController.swift */,
+				293A346E2D5F40AA001AE6FC /* SelectSquadViewModel.swift */,
+			);
+			path = Squad;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2935D04B2D626B660050430F /* GoMoneyAssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2935D0542D626B660050430F /* Build configuration list for PBXNativeTarget "GoMoneyAssessmentTests" */;
+			buildPhases = (
+				2935D0482D626B660050430F /* Sources */,
+				2935D0492D626B660050430F /* Frameworks */,
+				2935D04A2D626B660050430F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2935D0512D626B660050430F /* PBXTargetDependency */,
+			);
+			name = GoMoneyAssessmentTests;
+			productName = GoMoneyAssessmentTests;
+			productReference = 2935D04C2D626B660050430F /* GoMoneyAssessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2935D0732D62B0690050430F /* GoMoneyAssessmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2935D07C2D62B0690050430F /* Build configuration list for PBXNativeTarget "GoMoneyAssessmentUITests" */;
+			buildPhases = (
+				2935D0702D62B0690050430F /* Sources */,
+				2935D0712D62B0690050430F /* Frameworks */,
+				2935D0722D62B0690050430F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2935D07B2D62B0690050430F /* PBXTargetDependency */,
+			);
+			name = GoMoneyAssessmentUITests;
+			productName = GoMoneyAssessmentUITests;
+			productReference = 2935D0742D62B0690050430F /* GoMoneyAssessmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		293A33FA2D5CEF6C001AE6FC /* GoMoneyAssessment */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 293A340F2D5CEF6E001AE6FC /* Build configuration list for PBXNativeTarget "GoMoneyAssessment" */;
@@ -83,6 +501,10 @@
 			dependencies = (
 			);
 			name = GoMoneyAssessment;
+			packageProductDependencies = (
+				293A34522D5DEA78001AE6FC /* SDWebImage */,
+				293A34542D5DEA78001AE6FC /* SDWebImageMapKit */,
+			);
 			productName = GoMoneyAssessment;
 			productReference = 293A33FB2D5CEF6C001AE6FC /* GoMoneyAssessment.app */;
 			productType = "com.apple.product-type.application";
@@ -97,6 +519,14 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					2935D04B2D626B660050430F = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 293A33FA2D5CEF6C001AE6FC;
+					};
+					2935D0732D62B0690050430F = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 293A33FA2D5CEF6C001AE6FC;
+					};
 					293A33FA2D5CEF6C001AE6FC = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -111,61 +541,203 @@
 				Base,
 			);
 			mainGroup = 293A33F22D5CEF6C001AE6FC;
+			packageReferences = (
+				293A34512D5DEA78001AE6FC /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 293A33FC2D5CEF6C001AE6FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				293A33FA2D5CEF6C001AE6FC /* GoMoneyAssessment */,
+				2935D04B2D626B660050430F /* GoMoneyAssessmentTests */,
+				2935D0732D62B0690050430F /* GoMoneyAssessmentUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2935D04A2D626B660050430F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2935D0722D62B0690050430F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		293A33F92D5CEF6C001AE6FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				293A340B2D5CEF6E001AE6FC /* LaunchScreen.storyboard in Resources */,
 				293A34082D5CEF6E001AE6FC /* Assets.xcassets in Resources */,
-				293A34062D5CEF6C001AE6FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2935D0482D626B660050430F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2935D06F2D6291E50050430F /* AllCompetitionsViewModelTests.swift in Sources */,
+				2935D0562D626F2B0050430F /* NetworkManagerTests.swift in Sources */,
+				2935D06B2D628BBD0050430F /* CompetitionsServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2935D0702D62B0690050430F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2935D0802D62B0A20050430F /* DashboardUITests.swift in Sources */,
+				2935D0842D63175D0050430F /* AllCompetitionsViewControllerUITests.swift in Sources */,
+				2935D0822D630EE40050430F /* TodaysFixturesViewControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		293A33F72D5CEF6C001AE6FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				293A34032D5CEF6C001AE6FC /* ViewController.swift in Sources */,
+				293A34352D5D2448001AE6FC /* DateExt+.swift in Sources */,
+				293A34642D5E6F48001AE6FC /* TeamCell.swift in Sources */,
+				293A342D2D5D0C74001AE6FC /* AllFixturesServiceImpl.swift in Sources */,
+				2935D0672D6287D90050430F /* NetworkManagerImpl.swift in Sources */,
+				293A34262D5D029C001AE6FC /* URLs.swift in Sources */,
+				293A34492D5DCF99001AE6FC /* SelectCompetitionFixturesViewController.swift in Sources */,
+				293A34572D5DEAA0001AE6FC /* StandingsTableViewCell.swift in Sources */,
+				293A346D2D5F408F001AE6FC /* SelectSquadViewController.swift in Sources */,
+				293A34282D5D045B001AE6FC /* AppError.swift in Sources */,
+				293A34222D5D022D001AE6FC /* TodayFixturesViewModel.swift in Sources */,
+				2935D0642D6278BB0050430F /* RequestHandlerMock.swift in Sources */,
+				293A34432D5D3808001AE6FC /* StringExt+.swift in Sources */,
+				293A34662D5E73B2001AE6FC /* TeamsResponse.swift in Sources */,
+				2935D0692D62895A0050430F /* NetworkManagerMock.swift in Sources */,
+				293A34712D5F5B14001AE6FC /* SquadTableViewCell.swift in Sources */,
 				293A33FF2D5CEF6C001AE6FC /* AppDelegate.swift in Sources */,
 				293A34012D5CEF6C001AE6FC /* SceneDelegate.swift in Sources */,
+				293A343C2D5D3497001AE6FC /* AllCompetitionsViewModel.swift in Sources */,
+				293A345D2D5E092C001AE6FC /* SelectCompetitionFixturesViewModel.swift in Sources */,
+				293A34412D5D34EE001AE6FC /* CompetitionsServiceImpl.swift in Sources */,
+				2935D06D2D6290420050430F /* CompetitionsServiceMock.swift in Sources */,
+				293A34322D5D13DF001AE6FC /* MatchTableViewCell.swift in Sources */,
+				293A34682D5E7A62001AE6FC /* SelectCompetitionTeamsViewModel.swift in Sources */,
+				293A343A2D5D333D001AE6FC /* CompetitionsResponse.swift in Sources */,
+				293A344E2D5DE11E001AE6FC /* SelectCompetitionStandingsViewModel.swift in Sources */,
+				2935D0622D62786E0050430F /* ResponseHandlerMock.swift in Sources */,
+				293A34242D5D028F001AE6FC /* NetworkManager.swift in Sources */,
+				293A34452D5D541F001AE6FC /* SelectCompetitionViewController.swift in Sources */,
+				293A341D2D5CFB63001AE6FC /* TodayFixturesViewController.swift in Sources */,
+				293A346A2D5E8EC7001AE6FC /* BaseViewModel.swift in Sources */,
+				2935D05B2D6277C20050430F /* RequestHandlerImpl.swift in Sources */,
+				2935D0592D62779A0050430F /* RequestHandler.swift in Sources */,
+				293A344B2D5DCFCE001AE6FC /* SelectCompetitionTeamsViewController.swift in Sources */,
+				2935D05E2D6278270050430F /* ResponseHandler.swift in Sources */,
+				293A341F2D5CFB7F001AE6FC /* AllCompetitionsViewController.swift in Sources */,
+				293A346F2D5F40AA001AE6FC /* SelectSquadViewModel.swift in Sources */,
+				293A34472D5DCF74001AE6FC /* SelectCompetitionStandingsViewController.swift in Sources */,
+				293A341A2D5CFA9B001AE6FC /* HomeViewController.swift in Sources */,
+				293A342B2D5D0C21001AE6FC /* AllFixturesService.swift in Sources */,
+				2935D0602D6278360050430F /* ResponseHandlerImpl.swift in Sources */,
+				293A34502D5DE25B001AE6FC /* StandingsResponse.swift in Sources */,
+				293A342F2D5D0DD5001AE6FC /* AllMatchesResponse.swift in Sources */,
+				293A343F2D5D34D1001AE6FC /* CompetitionsService.swift in Sources */,
+				293A34612D5E1FBD001AE6FC /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		293A34042D5CEF6C001AE6FC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				293A34052D5CEF6C001AE6FC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		2935D0512D626B660050430F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 293A33FA2D5CEF6C001AE6FC /* GoMoneyAssessment */;
+			targetProxy = 2935D0502D626B660050430F /* PBXContainerItemProxy */;
 		};
-		293A34092D5CEF6E001AE6FC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				293A340A2D5CEF6E001AE6FC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
+		2935D07B2D62B0690050430F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 293A33FA2D5CEF6C001AE6FC /* GoMoneyAssessment */;
+			targetProxy = 2935D07A2D62B0690050430F /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2935D0522D626B660050430F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MBAC55AGH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gomoney.GoMoneyAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoMoneyAssessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoMoneyAssessment";
+			};
+			name = Debug;
+		};
+		2935D0532D626B660050430F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MBAC55AGH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gomoney.GoMoneyAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoMoneyAssessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoMoneyAssessment";
+			};
+			name = Release;
+		};
+		2935D07D2D62B0690050430F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MBAC55AGH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gomoney.GoMoneyAssessmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoMoneyAssessment;
+			};
+			name = Debug;
+		};
+		2935D07E2D62B0690050430F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MBAC55AGH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gomoney.GoMoneyAssessmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoMoneyAssessment;
+			};
+			name = Release;
+		};
 		293A340D2D5CEF6E001AE6FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -297,7 +869,6 @@
 				INFOPLIST_FILE = GoMoneyAssessment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +896,6 @@
 				INFOPLIST_FILE = GoMoneyAssessment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -344,6 +914,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2935D0542D626B660050430F /* Build configuration list for PBXNativeTarget "GoMoneyAssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2935D0522D626B660050430F /* Debug */,
+				2935D0532D626B660050430F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2935D07C2D62B0690050430F /* Build configuration list for PBXNativeTarget "GoMoneyAssessmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2935D07D2D62B0690050430F /* Debug */,
+				2935D07E2D62B0690050430F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		293A33F62D5CEF6C001AE6FC /* Build configuration list for PBXProject "GoMoneyAssessment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -363,6 +951,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		293A34512D5DEA78001AE6FC /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		293A34522D5DEA78001AE6FC /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 293A34512D5DEA78001AE6FC /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		293A34542D5DEA78001AE6FC /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 293A34512D5DEA78001AE6FC /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 293A33F32D5CEF6C001AE6FC /* Project object */;
 }

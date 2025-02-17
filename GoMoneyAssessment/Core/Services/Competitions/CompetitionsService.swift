@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+protocol CompetitionsService {
+    func fetchCompetitions() async throws -> CompetitionsResponse
+    func fetchStandings(for code: String) async throws -> StandingsResponse
+    func fetchFixtures(for code: String) async throws -> AllMatchesResponse
+    func fetchTeams(for code: String) async throws -> TeamsResponse
+}
